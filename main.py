@@ -9,7 +9,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Loading model
 model = tf.keras.models.load_model("spam_classifier_model.h5")
 
-
 def processing(sentence):
     with open("variables.json", "r") as file:
         data = json.load(file)
